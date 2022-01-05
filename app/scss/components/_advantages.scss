@@ -1,0 +1,231 @@
+.advantages {
+    padding: 120px 0;
+
+    @include r(992) {
+        padding: 80px 0;
+    }
+
+    @include r(768) {
+        padding: 60px 0;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        color: $black;
+        margin-bottom: 60px;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            @include pseudo;
+            width: 100%;
+            height: 25px;
+            background-color: #FDEDE7;
+            bottom: -6px;
+            left: 0;
+            z-index: -1;
+        }
+
+        @include r(1230) {
+            margin-bottom: 42px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+        @include r(1230) {
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 34%);
+        }
+
+        @include r(992) {
+            grid-template-columns: repeat(2, 50%);
+            grid-gap: 30px;
+        }
+
+        @include r(768) {
+            display: block;
+        }
+    }
+
+    &__item {
+        @include r(768) {
+            margin-bottom: 40px;
+        }
+
+        @include r(768) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-inner {
+            position: relative;
+            margin-bottom: 30px;
+
+            @include r(1230) {
+                margin-bottom: 20px;
+            }
+
+        }
+
+        &-content {
+            @include r(768) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &-link {
+            position: relative;
+
+            &::before {
+                @include pseudo;
+                top: 0;
+                left: 0;
+                background-color: rgba(231, 73, 15, 0.7);
+                z-index: 1;
+                width: 350px;
+                height: 404px;
+
+                @include r(1230) {
+                    width: 327px;
+                    height: 343px;
+                }
+
+                @include r(992) {
+                    width: 350px;
+                    height: 404px;
+                }
+
+                @include r(580) {
+                    width: 343px;
+                    height: 343px;
+                }
+
+                @include r(375) {
+                    width: 290px;
+                    height: 290px;
+                }
+            }
+        }
+
+        &-image {
+            width: 350px;
+            width: 100%;
+            height: 404px;
+            box-shadow:
+                inset rgba(0, 0, 0, .6) 0 -3px 8px,
+                inset rgba(252, 255, 255, .7) 0 3px 8px,
+                rgba(0, 0, 0, .8) 0 3px 8px -3px;
+            object-fit: cover;
+
+            @include r(1230) {
+                width: 327px;
+                height: 343px;
+            }
+
+            @include r(992) {
+                width: 350px;
+                height: 404px;
+            }
+
+            @include r(580) {
+                width: 343px;
+                height: 343px;
+            }
+
+            @include r(375) {
+                width: 290px;
+                height: 290px;
+            }
+        }
+
+        &-num {
+            position: absolute;
+            color: $accend;
+            font-size: 64px;
+            font-weight: 800;
+            background-color: $white;
+            padding: 26px 45px 25px;
+            bottom: -1px;
+            left: -1px;
+            z-index: 2;
+            transform: scale(0);
+            opacity: 0;
+            transition: transform 0.5s;
+            &._active {
+                transform: scale(1);
+                opacity: 1;                
+            }
+
+            &::before {
+                @include pseudo;
+                bottom: 0;
+                left: 0;
+                width: 3px;
+                height: 21px;
+                background-color: $black;
+            }
+
+            &::after {
+                @include pseudo;
+                left: 0;
+                bottom: 0;
+                width: 21px;
+                height: 3px;
+                background-color: $black;
+            }
+
+            &__shadow {
+                position: absolute;
+                font-family: 'Gotham', sans-serif;
+                font-style: italic;
+                font-weight: 900;
+                font-size: 135px;
+                color: rgba(196, 196, 196, 0.2);
+                left: 27px;
+                bottom: -10px;
+                z-index: 4;
+            }
+        }
+
+        &-title {
+            font-size: 27px;
+            color: $black;
+            margin-bottom: 15px;
+
+            @include r(1230) {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+
+            @include r(992) {
+                font-size: 26px;
+            }
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 1.5;
+
+            @include r(1230) {
+                font-size: 14px;
+                padding-right: 40px;
+            }
+
+            @include r(992) {
+                font-size: 16px;
+                padding-right: 0;
+            }
+        }
+    }
+
+}

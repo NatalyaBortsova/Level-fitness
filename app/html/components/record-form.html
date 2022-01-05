@@ -1,0 +1,24 @@
+<div class="record-form trainers__registration">
+    <div class="record-form__image" style="background-image: url('../../images/image-record.jpg');">
+        <button class="record-form__button">
+            <svg class="record-form__icon">
+                <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+    <form class="trainers__registration-form" action="#" id="form">
+        <label class="trainers__registration-label" for="name">Имя*</label>
+        <input class="trainers__registration-input" type="text" name="name" id="name"
+            placeholder="Например Алина" required minlength="3" maxlength="30">
+            <div class="span"></div>
+        <label class="trainers__registration-label" for="phone">Номер телефона*</label>
+        <input class="trainers__registration-input" type="tel" name="phone" id="phone"
+            placeholder="+38(_ _ _) _ _ _ - _ _ - _ _" required>
+        <button class="trainers__registration-button button" type="submit" formnovalidate>Записаться на
+            тренировку</button>
+            <span class="record-form__text">
+                Спортивное счастье рядом !
+            </span>       
+    </form>
+
+</div>

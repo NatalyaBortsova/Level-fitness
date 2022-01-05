@@ -1,0 +1,288 @@
+.trainers {
+    background-color: transparent;
+    background-image: url('../../images/trainers-bg.png');
+    background-repeat: round;
+    background-size: cover;
+    border: transparent;
+    z-index: 1;
+    position: relative;
+
+    @include r(768) {
+        background-color: $black;
+    }
+
+    &__inner {
+        padding: 210px 0 80px;
+        background-image: url('../../images/icons/line2.svg');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+
+        @include r(768) {
+            padding: 60px 0 40px;
+        }
+        @include r(580) {
+            background-image: none;
+        }
+        .about__image {
+            &::after {
+                @include r(1230) {
+                    bottom: -20px;
+                }
+                @include r(320) {
+                    bottom: -15px;
+                    right: -15px;
+                }               
+            }
+        }
+    }
+
+    &__slider {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &__content {
+        margin-bottom: 60px;        
+
+        &.programs__content::before {
+            background-image: none;
+        }
+
+        @include r(768) {
+            justify-content: initial;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__slide {
+        @include r(580) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        display: block;
+    }
+
+    &__image {
+        cursor: pointer;
+        width: 315px;
+        height: 185px;
+        transition: transform 0.5s;
+
+        @include r(580) {
+            width: 150px;
+            height: 100px;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__text {
+        & span {
+            display: block;
+        }
+    }
+
+    &__title {
+        @include r(768) {
+            font-size: 20px;
+        }
+
+        @include r(580) {
+            font-size: 16px;
+        }
+    }
+
+    &__registration {
+        padding: 60px 0 119px;
+        background-image: url('../../images/icons/line3.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+
+        @include r(992) {
+            padding: 60px 0 80px;
+        }
+
+        @include r(992) {
+            padding: 60px 0 60px;
+        }
+
+        @include r(580) {
+            padding: 30px 0 60px;
+            background-image: none;
+        }
+
+        &::before {
+            @include pseudo;
+            bottom: 78px;
+            left: 0;
+            width: 334px;
+            height: 334px;
+            border-radius: 50%;
+            background-color: rgba(231, 73, 15, 0.8);
+            filter: blur(230px);
+            @include r(580) {
+                display: none;
+            }
+        }
+
+        &::after {
+            @include pseudo;
+            top: 0;
+            right: 0;
+            width: 334px;
+            height: 334px;
+            border-radius: 50%;
+            background-color: rgba(231, 73, 15, 0.8);
+            filter: blur(230px);
+
+            @include r(992) {
+                right: 170px;
+            }
+
+            @include r(580) {
+                display: none;
+            }
+        }
+
+        &-title {
+            text-align: center;
+            margin-bottom: 85px;
+            position: relative;
+
+            &::after {
+                @include pseudo;
+                width: 165px;
+                height: 2px;
+                left: 42%;
+                bottom: -20px;
+                background-color: $accend;
+
+                @include r(992) {
+                    left: 40%;
+                }
+
+                @include r(768) {
+                    left: 38%;
+                }
+
+                @include r(580) {
+                    left: 35%;
+                    width: 130px;
+                }
+
+                @include r(375) {
+                    left: 33%;
+                    width: 100px;
+                }
+            }
+        }
+
+        &-form {
+            z-index: 10;
+        }
+
+        &-block {
+            margin: 0 auto;
+            width: 540px;
+
+            @include r(992) {
+                width: 430px;
+            }
+
+            @include r(580) {
+                width: 343px;
+            }
+            @include r(320) {
+                width: 290px;
+            }
+        }
+
+        &-label {
+            display: block;
+            font-size: 16px;
+            color: $white;
+            font-weight: 400;
+            margin-bottom: 20px;
+
+        }
+
+        &-input {
+            display: block;
+            z-index: 10;
+            border: 1px solid #757575;
+            padding: 19px 20px;
+            max-width: 540px;
+            width: 100%;
+            color: $white;
+            font-size: 18px;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+
+            &:last-child {
+                margin-bottom: 60px;
+            }
+
+            &::placeholder {
+                color: #757575;
+                font-size: 18px;
+            }
+
+            @include r(992) {
+                max-width: 430px;
+            }
+
+            @include r(580) {
+                max-width: 343px;
+            }
+
+            @include r(370) {
+                max-width: 290px;
+            }
+        }
+
+        &-button {
+            max-width: 540px;
+            z-index: 10;
+            width: 100%;
+            color: $white;
+            padding: 20px;
+            text-align: center;
+
+            @include r(992) {
+                max-width: 430px;
+            }
+
+            @include r(580) {
+                max-width: 343px;
+            }
+
+            @include r(370) {
+                max-width: 290px;
+            }
+        }
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 12px;
+        height: 12px;
+        background-color: $accend;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}

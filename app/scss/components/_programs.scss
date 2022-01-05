@@ -1,0 +1,101 @@
+.programs {
+    z-index: 1;
+    padding-bottom: 245px;
+    background-color: transparent;
+    border: transparent;
+    background-image: url('../../images/program-bg.png');
+    background-repeat: round;
+    background-size: cover;   
+    @include r(992) {
+        padding-bottom: 80px;
+    }   
+    @include r(768) {
+        background-color: $black;
+        padding-bottom: 60px;
+    }   
+   
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 80px;       
+        position: relative;
+        @include r(992) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &::before {
+            @include pseudo;
+            width: 757px;
+            height: 200px;
+            top: -150px;
+            left: -120px;
+            background-image: url('../../images/icons/line1.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include r(1230) {
+                left: -170px;
+            }
+            @include r(768) {
+                left: -66%;
+                top: -88px;
+                z-index: -1;
+            }
+            @include r(580) {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        max-width: 350px;
+        padding: 20px;
+        display: none;
+        @include r(768) {
+            padding: 0;
+        }
+    }
+
+    &__image {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: $text;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    &__button {
+        width: 100%;
+        color: $accend;
+        background-color: $black;
+        border: 1px solid $accend;
+        transition: color 0.5s, background-color 0.5s;
+
+        &:hover {
+            color: $white;
+            background-color: $accend;
+        }
+    }
+
+    &__load {
+        display: block;
+        margin: 0 auto;
+        padding: 22px 62px;
+        color: $white;
+        @include r(375) {
+            padding: 22px 25px;
+        }
+    }
+
+}

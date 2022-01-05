@@ -1,45 +1,129 @@
 <header class="header">
     <div class="container">
-      <div class="header__inner">
-      <nav class="menu">
-        <a class="logo" href="#">
-          <img class="logo__image" src="images/logo.svg" alt="логотип">
-        </a>
-        <div class="menu__connect">
-          <span class="menu__connect-address">
-            г.Полтава, ул. Гоголя, д.12
-          </span>
-          <a class="menu__connect-social" href="https://www.instagram.com">Мы в Instagram</a>
+
+        <div class="scroll-top _hide">
+            <svg class="scroll-top__icon">
+                <use xlink:href="images/sprite.svg#uparrow"></use>
+            </svg>
         </div>
-        <div class="menu__content">
-          <div class="menu__content-registration">
-          <a class="menu__content-phone" href="tel:38990001112">+38 099-000-11-12</a>
-          <button class="menu__content-button button">на тренировку</button>
-        </div>
-        <ul class="menu__content-list">
-          <li class="menu__content-item">
-            <a class="menu__content-link" href="#">
-              Групповые программы
-          </a>
-        </li>
-          <li class="menu__content-item">
-            <a class="menu__content-link" href="#">
-              Тренара
-          </a>
-        </li>
-          <li class="menu__content-item">
-            <a class="menu__content-link" href="#">
-              Интерьер
-          </a>
-        </li>
-          <li class="menu__content-item">
-            <a class="menu__content-link" href="#">
-              Контакты
-          </a>
-        </li>
-        </ul>
-        </div>        
-      </nav>
+
+        <nav class="header__menu menu">
+            <a class="logo" href="#">
+                <img class="logo__image" src="images/logo.svg" alt="логотип" width="166" height="76">
+            </a>
+
+            <button class="burger" type="button">
+                <svg class="burger__icon">
+                    <use xlink:href="images/sprite.svg#burger-btn"></use>
+                </svg>
+            </button>
+            <div class="burger__menu">
+                <div class="burger__menu-top">
+                    <a class="logo" href="#">
+                        <img class="logo__image" src="images/logo.svg" alt="логотип" width="140" height="64">
+                    </a>
+                    <button class="burger__menu-btn" type="button">
+                        <svg class="burger__icon">
+                            <use xlink:href="images/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <ul class="burger__menu-connect">
+                        <li class="burger__menu-connect__item">
+                            <a class="burger__menu-connect__link" href="tel:38990001112">
+                                <svg class="burger__icon">
+                                    <use xlink:href="images/sprite.svg#phone"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger__menu-connect__item">
+                            <a class="burger__menu-connect__link" href="https://www.instagram.com">
+                                <svg class="burger__icon">
+                                    <use xlink:href="images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger__menu-connect__item">
+                            <a class="burger__menu-connect__link" href="#footer">
+                                <svg class="burger__icon">
+                                    <use xlink:href="images/sprite.svg#location"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="burger__menu-bottom">
+                    <ul class="burger__menu-list">
+                        <li class="burger__menu-item burger__menu-item--programs">
+                            <a class="burger__menu-link" href="#programs">
+                                Групповые программы
+                            </a>
+                        </li>
+                        <li class="burger__menu-item burger__menu-item--trainers">
+                            <a class="burger__menu-link" href="#trainers">
+                                Тренера
+                            </a>
+                        </li>
+                        <li class="burger__menu-item burger__menu-item--interior">
+                            <a class="burger__menu-link" href="#interior">
+                                Интерьер
+                            </a>
+                        </li>
+                        <li class="burger__menu-item burger__menu-item--contacts">
+                            <a class="burger__menu-link" href="#footer">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <address class="burger__menu-address address">
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <a class="address__link" href="tel:38990001112">
+                                    +38 099-000-11-12
+                                </a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link" href="#footer">
+                                    г. Полтава, ул. Гоголя, д.12
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+
+            <div class="menu__connect">
+                <a class="menu__connect-address" href="#footer"> г. Полтава, ул. Гоголя, д.12</a>
+                <a class="menu__connect-social" href="https://www.instagram.com">Мы в Instagram</a>
+            </div>
+            <div class="menu__content">
+                <div class="menu__content-registration">
+                    <a class="menu__content-phone" href="tel:38990001112">+38 099-000-11-12</a>
+                    <button class="menu__content-button button" type="button">на тренировку</button>
+                </div>
+                <ul class="menu__content-list">
+                    <li class="menu__content-item">
+                        <a class="menu__content-link" href="#programs">
+                            Групповые программы
+                        </a>
+                    </li>
+                    <li class="menu__content-item">
+                        <a class="menu__content-link" href="#trainers">
+                            Тренера
+                        </a>
+                    </li>
+                    <li class="menu__content-item">
+                        <a class="menu__content-link" href="#interior">
+                            Интерьер
+                        </a>
+                    </li>
+                    <li class="menu__content-item">
+                        <a class="menu__content-link" href="#footer">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    </div>
-  </header>
+</header>

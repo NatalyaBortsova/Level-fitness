@@ -1,0 +1,123 @@
+.footer {
+    background-color: $black;
+    color: $white;
+
+    @include r(992) {
+        font-size: 16px;
+    }
+
+    &__inner {
+        display: flex;
+        padding-top: 120px;
+
+        @include r(992) {
+            padding-top: 80px;
+        }
+
+        @include r(768) {
+            padding-top: 60px;
+            display: block;
+        }
+
+    }
+
+    &__content {
+        border: 1px solid $accend;
+    }
+
+    &__address {
+        padding: 92px 57px 92px 64px;
+
+        @include r(1230) {
+            padding: 60px 57px 60px 30px;
+        }
+
+        @include r(992) {
+            padding: 24px 16px 23px 16px;
+        }
+
+
+        &-item {
+            display: block;
+            padding-left: 34px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            position: relative;
+
+            &::before {
+                @include pseudo;
+                top: 0;
+                left: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &--schedule {
+                max-width: 395px;
+                position: relative;
+
+                @include r(992) {
+                    max-width: 360px;
+                }
+
+                &::before {
+                    width: 18px;
+                    height: 20px;
+                    background-image: url('../../images/icons/calendarblank.svg');
+                }
+            }
+
+            &--location {
+                max-width: 395px;
+                position: relative;
+
+                &::before {
+                    width: 17px;
+                    height: 21px;
+                    background-image: url('../../images/icons/location-red.svg');
+                }
+            }
+
+            &--phone {
+                max-width: 395px;
+                position: relative;
+
+                &::before {
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('../../images/icons/phone-red.svg');
+                }
+            }
+        }
+    }
+
+    &__location {
+        border: 1px solid $accend;
+        background-color: $white;
+
+        & iframe {
+            width: 571px;
+            height: 473px;
+
+            @include r(992) {
+                width: 395px;
+                height: 320px;
+            }
+            @include r(768) {
+                max-width: 734px;
+                width: 100%;
+            }
+             
+        }
+    }
+
+    &__copy {
+        padding: 40px 0;
+        text-align: center;
+
+        @include r(768) {
+            padding: 20px 0;
+        }
+    }
+}
