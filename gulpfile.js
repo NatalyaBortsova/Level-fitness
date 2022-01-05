@@ -11,7 +11,6 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const fileInclude = require('gulp-file-include');
 
-
 const htmlInclude = () => {
     return src(['app/html/*.html'])
     .pipe(fileInclude ({
@@ -47,8 +46,12 @@ function styles() {
 }
 
 function scripts() {
-    return src([
+    return src([          
             'node_modules/jquery/dist/jquery.js',
+            'node_modules/swiper/swiper-bundle.js',
+            'node_modules/wow.js/dist/wow.js',
+            'node_modules/inputmask/dist/inputmask.js',
+            'node_modules/slick-carousel/slick/slick.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))

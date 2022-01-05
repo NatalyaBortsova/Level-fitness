@@ -1,0 +1,160 @@
+.slider {
+    background-color: $black;
+    border-top: 1px solid $black;
+    border-bottom: 4px solid $black;
+
+    &__btn {
+        display: none;
+
+        @include r(580) {
+            display: block;
+            color: $white;
+            width: 100%;
+        }
+    }
+
+    &-top {
+        max-width: 1440px;
+        position: relative;
+        background-image: url('../../images/banner_element.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+
+        @include r(580) {
+            background-image: none;
+        }
+
+        &__item {
+            display: flex;
+            min-width: 0;
+
+            @include r(768) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        &__image {
+            align-self: end;
+            object-fit: cover;
+            width: 672px;
+            height: 478px;
+
+            @include r(1230) {
+                width: 540px;
+                height: 360px;
+            }
+        }
+
+        &__content {
+            color: $white;
+            line-height: 1.4;
+            font-size: 18px;
+            padding: 174px 0 181px;
+
+            @include r(1230) {
+                margin: 0 auto;
+            }
+
+            @include r(992) {
+                padding: 150px 0;
+            }
+
+            @include r(768) {
+                padding: 0 0 92px;
+            }
+        }
+
+        &__title {
+            font-size: 44px;
+            font-weight: 900;
+            text-transform: uppercase;
+            max-width: 612px;
+            margin-bottom: 30px;           
+
+            @include r(1230) {
+                font-size: 30px;
+                max-width: 480px;
+            }
+
+            @include r(992) {
+                font-size: 28px;
+            }
+
+            @include r(768) {
+                text-align: center;
+            }
+
+            &-num {
+                color: $accend;
+            }
+        }
+
+        &__text {
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;            
+
+            @include r(1230) {
+                font-size: 16px;
+            }
+
+            @include r(768) {
+                text-align: center;
+            }
+        }
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 20px;
+        padding: 12px 18px;
+        background-color: rgba($white, 0.1);
+        border-radius: 50%;
+        color: $white;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        @include r(1230) {
+            top: 80%;
+        }
+
+        @include r(992) {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: 50px;
+
+        @include r(1230) {
+            right: 15%;
+        }
+    }
+
+    .swiper-button-prev {
+        @include r(1230) {
+            left: 68%;
+        }
+    }
+
+    .swiper-pagination {
+        display: none;
+
+        @include r(992) {
+            display: block;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 12px;
+        height: 12px;
+        background-color: $accend;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}

@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Фитнесс-клуб Level, прокачайся на полную!</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
- 
+
+  <div class="overlay"></div>
 
   @include('./components/header.html')
-  
+  @include('./components/record-form.html')
+  <main class="main">
+
+    @include('./components/slider.html')
+    @include('./components/about.html')
+    @include('./components/advantages.html')
+    @include('./components/programs.html')
+    @include('./components/form_registration.html')
+    @include('./components/trainers.html')
+    @include('./components/interior.html')
+    @include('./components/footer.html')
+
+
+
+  </main>
+
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
