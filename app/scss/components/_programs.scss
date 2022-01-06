@@ -3,7 +3,7 @@
     padding-bottom: 245px;
     background-color: transparent;
     border: transparent;
-    background-image: url('../../images/program-bg.png');
+    background-image: url('images/program-bg.png');
     background-repeat: round;
     background-size: cover;   
     @include r(992) {
@@ -32,7 +32,7 @@
             height: 200px;
             top: -150px;
             left: -120px;
-            background-image: url('../../images/icons/line1.svg');
+            background-image: url('images/icons/line1.svg');
             background-repeat: no-repeat;
             background-size: cover;
             @include r(1230) {
