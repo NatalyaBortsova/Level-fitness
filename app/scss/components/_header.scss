@@ -39,7 +39,7 @@
                     height: 24px;
                     top: 0;
                     left: 0;
-                    background-image: url('../../images/icons/location.svg');
+                    background-image: url('images/icons/location.svg');
 
                 }
 
@@ -66,7 +66,7 @@
                     height: 24px;
                     top: 7px;
                     left: 12px;
-                    background-image: url('../../images/icons/instagram.svg');
+                    background-image: url('images/icons/instagram.svg');
                     @include r(375) {
                         left: 0;
                         top: 9px;
@@ -114,7 +114,7 @@
                     height: 24px;
                     top: 2px;
                     left: 0;
-                    background-image: url('../../images/icons/phone.svg');
+                    background-image: url('images/icons/phone.svg');
                     @include r(375) {
                         left: 20px;
                     }
@@ -267,7 +267,7 @@
 
                 &--programs {
                     &::before {
-                        background-image: url('../../images/icons/programs-user.svg');
+                        background-image: url('images/icons/programs-user.svg');
                         width: 27px;
                         height: 18px;
 
@@ -276,13 +276,13 @@
 
                 &--trainers {
                     &::before {
-                        background-image: url('../../images/icons/trainers-user.svg');
+                        background-image: url('images/icons/trainers-user.svg');
                     }
                 }
 
                 &--interior {
                     &::before {
-                        background-image: url('../../images/icons/interior.svg');
+                        background-image: url('images/icons/interior.svg');
                         width: 24px;
                         height: 24px;
                     }
@@ -290,7 +290,7 @@
 
                 &--contacts {
                     &::before {
-                        background-image: url('../../images/icons/location-red.svg');
+                        background-image: url('images/icons/location-red.svg');
                         width: 19px;
                         height: 25px;
                     }
