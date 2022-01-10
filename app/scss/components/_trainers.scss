@@ -1,6 +1,6 @@
 .trainers {
     background-color: transparent;
-    background-image: url('images/trainers-bg.png');
+    background-image: url('../images/trainers_bg.png');
     background-repeat: round;
     background-size: cover;
     border: transparent;
@@ -13,7 +13,7 @@
 
     &__inner {
         padding: 210px 0 80px;
-        background-image: url('images/icons/line2.svg');
+        background-image: url('../images/icons/line2.svg');
         background-repeat: no-repeat;
         background-position: bottom left;
 
@@ -100,7 +100,7 @@
 
     &__registration {
         padding: 60px 0 119px;
-        background-image: url('images/icons/line3.svg');
+        background-image: url('../images/icons/line3.svg');
         background-repeat: no-repeat;
         background-position: bottom;
         position: relative;

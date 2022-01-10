@@ -19,13 +19,13 @@ $(function () {
         });
     });
 
-    var $overlay = $('.overlay'),
+    let $overlay = $('.overlay'),
         $overlayTrigger = $('.menu__content-button'),
         $overlayClose = $('.record-form__button, .trainers__registration-button'),
         openClass = 'is-open';
 
     $overlayTrigger.on('click', function () {
-        var num = ('0' + ($(this).index() + 1)).slice(-2);
+        let num = ('0' + ($(this).index() + 1)).slice(-2);
         $('.overlay').addClass(openClass);
         $overlayClose.addClass(openClass);
     });
@@ -72,11 +72,11 @@ $(function () {
     im.mask('#phone');
 
 
-    $('.menu__content-button, .programs__button, .form-registration__button').on('click', function () {
+    $('.menu__content-button, .form-registration__button, .programs__button').on('click', function () {
         $('.record-form').addClass('active');
     });
 
-    $('.record-form__button').on('click', function () {
+    $('.record-form__button, .trainers__registration-button').on('click', function () {
         $('.record-form').removeClass('active');
     });
 
@@ -113,14 +113,16 @@ $(function () {
         $('.record-form').addClass('close');
     });
 
-    $('.programs__button, .form-registration__button').on('click', function (event) {
+    $('.menu__content-button').on('click', function () {
+        $('.record-form').removeClass('close');
+    });
+
+    $('.form-registration__button, .programs__button').on('click', function (event) {
         var target = $('.record-form');
         $('html, body').animate({
             scrollTop: top
-        }, 1500);
+        }, 500);
     });
-
-
 
 
     const slider = document.querySelector('.trainers__slider');
@@ -175,27 +177,28 @@ $(function () {
                 if ((pageYOffset > animItemOffSet - animItemPoint) && pageYOffset < (animItemOffSet + animItemHeight)) {
                     animItem.classList.add(`_active`);
                 } else {
-                    if(animItem.classList.contains('_anim-no-hide')){
+                    if (animItem.classList.contains('_anim-no-hide')) {
                         animItem.classList.remove(`_active`);
-                    };                    
+                    };
                 }
             }
         }
 
-    function offset(el) {
-        const rect = el.getBoundingClientRect()
-        let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-        return {
-            top: rect.top + scrollTop,
-            left: rect.left + scrollLeft
+        function offset(el) {
+            const rect = el.getBoundingClientRect()
+            let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop
+            return {
+                top: rect.top + scrollTop,
+                left: rect.left + scrollLeft
+            }
         }
+
+        setTimeout(() => {
+            animOnScroll()
+        }, 300)
     }
 
-    setTimeout(() => {
-        animOnScroll()
-    }, 300)
-}
 
 
 });

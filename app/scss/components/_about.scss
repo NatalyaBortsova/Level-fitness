@@ -97,7 +97,7 @@
             height: 195px;
             bottom: -40px;
             right: -40px;
-            background-image: url('images/letter_banner.png');
+            background-image: url('../images/letter_banner.png');
             z-index: -1;
 
             @include r(1230) {

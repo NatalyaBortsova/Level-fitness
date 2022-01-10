@@ -143,14 +143,14 @@
     </div>
 </header>
   <div class="record-form trainers__registration">
-    <div class="record-form__image" style="background-image: url('../../images/image-record.jpg');">
-        <button class="record-form__button">
+    <div class="record-form__image" style="background-image: url('images/image-record.jpg');">
+        <button class="record-form__button" type="button">
             <svg class="record-form__icon">
                 <use xlink:href="images/sprite.svg#close"></use>
-            </svg>
+            </svg>        
         </button>
     </div>
-    <form class="trainers__registration-form" action="#" id="form">
+    <form class="trainers__registration-form" action="#" id="registration">
         <label class="trainers__registration-label" for="name">Имя*</label>
         <input class="trainers__registration-input" type="text" name="name" id="name"
             placeholder="Например Алина" required minlength="3" maxlength="30">
@@ -177,7 +177,7 @@
         <div class="slider-top__wrapper swiper-wrapper">
 
             <div class="slider-top__item swiper-slide">
-                <img class="slider-top__image" src="../../images/image1.png" alt="фитнесс-модель" width="672" height="478">
+                <img class="slider-top__image" src="images/image1.png" alt="фитнесс-модель" width="672" height="478">
                 <div class="slider-top__content">
                     <h3 class="slider-top__title">
                         Более <span class="slider-top__title-num">20</span> различных
@@ -188,7 +188,7 @@
             </div>
 
             <div class="slider-top__item swiper-slide">
-                <img class="slider-top__image" src="../../images/image1.png" alt="фитнесс-модель">
+                <img class="slider-top__image" src="images/image1.png" alt="фитнесс-модель">
                 <div class="slider-top__content">
                     <h3 class="slider-top__title">
                         Более <span class="slider-top__title-num">20</span> различных
@@ -199,7 +199,7 @@
             </div>
 
             <div class="slider-top__item swiper-slide">
-                <img class="slider-top__image" src="../../images/image1.png" alt="фитнесс-модель">
+                <img class="slider-top__image" src="images/image1.png" alt="фитнесс-модель">
                 <div class="slider-top__content">
                     <h3 class="slider-top__title">
                         Более <span class="slider-top__title-num">20</span> различных
@@ -263,7 +263,7 @@
             <li class="advantages__item">
                 <div class="advantages__item-inner">
                     <a class="advantages__item-link" href="#">
-                        <img class="advantages__item-image" src="../../images/image3.jpg"
+                        <img class="advantages__item-image" src="images/image3.jpg"
                             alt="бодибилдер поднимает штангу" width="350" height="404">
                     </a>
                     <span class="advantages__item-num _anim-items">1</span>
@@ -288,7 +288,7 @@
             <li class="advantages__item">
                 <div class="advantages__item-inner">
                     <a class="advantages__item-link" href="#">
-                        <img class="advantages__item-image" src="../../images/image4.jpg"
+                        <img class="advantages__item-image" src="images/image4.jpg"
                             alt="фитнесс-модель качает руки" width="350" height="404">
                     </a>
                     <span class="advantages__item-num _anim-items">2</span>
@@ -314,7 +314,7 @@
             <li class="advantages__item">
                 <div class="advantages__item-inner">
                     <a class="advantages__item-link" href="#">
-                        <img class="advantages__item-image" src="../../images/image5.jpg" alt="фитнесс-модель бежит"
+                        <img class="advantages__item-image" src="images/image5.jpg" alt="фитнесс-модель бежит"
                             width="350" height="404">
                     </a>
                     <span class="advantages__item-num _anim-items">3</span>
@@ -357,7 +357,7 @@
                 </div>
             </div>
             <div class="about__image">
-                <img class="about__img" src="../../images/image6.jpg" alt="фитнесс-модель качает пресс" width="445"
+                <img class="about__img" src="images/image6.jpg" alt="фитнесс-модель качает пресс" width="445"
                     height="303">
             </div>
         </div>
@@ -365,7 +365,7 @@
         <ul class="programs__content">
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
+                <img class="programs__image" src="images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
                     height="185">
                 <h4 class="programs__title subtitle">
                     HIT-тренинг
@@ -377,13 +377,11 @@
                         + 30 минут растяжка
                     </p>
                 </div>
-                <button class="programs__button button" type="submit">Записаться</button>
-
+                <button class="programs__button button" type="submit">Записаться</button>               
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program2.jpg" alt="Пилатес" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program2.jpg" alt="Пилатес" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Пилатес
                 </h4>
@@ -395,11 +393,12 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
+
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program3.jpg" alt="Зумба" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program3.jpg" alt="Зумба" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Зумба
                 </h4>
@@ -411,11 +410,11 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program4.jpg" alt="Табата" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program4.jpg" alt="Табата" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Табата
                 </h4>
@@ -427,10 +426,11 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program5.jpg" alt="Стретчинг" width="315"
+                <img class="programs__image" src="images/programs/program5.jpg" alt="Стретчинг" width="315"
                     height="185">
                 <h4 class="programs__title subtitle">
                     Стретчинг
@@ -446,7 +446,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
+                <img class="programs__image" src="images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
                     height="185">
                 <h4 class="programs__title subtitle">
                     HIT-тренинг
@@ -463,7 +463,7 @@
 
             <li class="programs__item">
 
-                <img class="programs__image" src="../../images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
+                <img class="programs__image" src="images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
                     height="185">
                 <h4 class="programs__title subtitle">
                     HIT-тренинг
@@ -480,8 +480,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program2.jpg" alt="Пилатес" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program2.jpg" alt="Пилатес" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Пилатес
                 </h4>
@@ -496,8 +495,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program3.jpg" alt="Зумба" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program3.jpg" alt="Зумба" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Зумба
                 </h4>
@@ -512,8 +510,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program4.jpg" alt="Табата" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program4.jpg" alt="Табата" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Табата
                 </h4>
@@ -528,7 +525,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program5.jpg" alt="Стретчинг" width="315"
+                <img class="programs__image" src="images/programs/program5.jpg" alt="Стретчинг" width="315"
                     height="185">
                 <h4 class="programs__title subtitle">
                     Стретчинг
@@ -541,10 +538,11 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="../../images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
+                <img class="programs__image" src="images/programs/program1-6.jpg" alt="HIT-тренинг" width="315"
                     height="185">
                 <h4 class="programs__title subtitle">
                     HIT-тренинг
@@ -598,7 +596,7 @@
                 </div>
             </div>
             <div class="about__image">
-                <img class="about__img" src="../../images/image7.jpg" alt="фитнесс-модель качает ноги" width="445"
+                <img class="about__img" src="images/image7.jpg" alt="фитнесс-модель качает ноги" width="445"
                     height="303">
             </div>
         </div>
@@ -611,9 +609,9 @@
 
                 <li class="trainers__item programs__item swiper-slide">
                     <div class="trainers__slide">
-                        <img class="trainers__image programs__image" src="../../images/trainers/trainer1.jpg"
+                        <img class="trainers__image programs__image" src="images/trainers/trainer1.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Иванов Андрей
                         </h4>
                         <div class="trainers__text programs__text">
@@ -625,9 +623,9 @@
 
                 <li class="trainers__item programs__item swiper-slide">
                     <div class="trainers__slide">
-                        <img class="trainers__image programs__image" src="../../images/trainers/trainer2-5.jpg"
+                        <img class="trainers__image programs__image" src="images/trainers/trainer2-5.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Варламова Екатерина
                         </h4>
                         <div class="trainers__text programs__text">
@@ -639,9 +637,9 @@
 
                 <li class="trainers__item programs__item swiper-slide">
                     <div class="trainers__slide">
-                        <img class="trainers__image programs__image" src="../../images/trainers/trainer3.jpg"
+                        <img class="trainers__image programs__image" src="images/trainers/trainer3.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Петров Николай
                         </h4>
                         <div class="trainers__text programs__text">
@@ -653,9 +651,9 @@
 
                 <li class="trainers__item programs__item swiper-slide">
                     <div class="trainers__slide">
-                        <img class="trainers__image programs__image" src="../../images/trainers/trainer4.jpg"
+                        <img class="trainers__image programs__image" src="images/trainers/trainer4.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Иванов Андрей
                         </h4>
                         <div class="trainers__text programs__text">
@@ -667,9 +665,9 @@
 
                 <li class="trainers__item programs__item swiper-slide">
                     <div class="trainers__slide">
-                        <img class="trainers__image programs__image" src="../../images/trainers/trainer2-5.jpg"
+                        <img class="trainers__image programs__image" src="images/trainers/trainer2-5.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Варламова Екатерина
                         </h4>
                         <div class="trainers__text programs__text">
@@ -681,9 +679,9 @@
 
                 <li class="trainers__item programs__item swiper-slide">
                     <div class="trainers__slide">
-                        <img class="trainers__image programs__image" src="../../images/trainers/trainer6.jpg"
+                        <img class="trainers__image programs__image" src="images/trainers/trainer6.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Петров Николай
                         </h4>
                         <div class="trainers__text programs__text">
@@ -726,22 +724,22 @@
         </h3>
         <ul class="interior__content">
             <li class="interior__item _anim-items">
-                <img class="interior__image" src="../../images/interior/image1.jpg" alt="зал с гантелями" width="350" height="300">
+                <img class="interior__image" src="images/interior/image1.jpg" alt="зал с гантелями" width="350" height="300">
             </li>
             <li class="interior__item _anim-items">
-                <img class="interior__image" src="../../images/interior/image2.jpg" alt="зал для растяжки" width="350" height="300">
+                <img class="interior__image" src="images/interior/image2.jpg" alt="зал для растяжки" width="350" height="300">
             </li>
             <li class="interior__item _anim-items">
-                <img class="interior__image" src="../../images/interior/image3.jpg" alt="тренажерный зал" width="350" height="300">
+                <img class="interior__image" src="images/interior/image3.jpg" alt="тренажерный зал" width="350" height="300">
             </li>
             <li class="interior__item _anim-items">
-                <img class="interior__image" src="../../images/interior/image4.jpg" alt="тренажерный зал" width="350" height="300">
+                <img class="interior__image" src="images/interior/image4.jpg" alt="тренажерный зал" width="350" height="300">
             </li>
             <li class="interior__item _anim-items">
-                <img class="interior__image" src="../../images/interior/image5.jpg" alt="фитнесс-зал" width="350" height="300">
+                <img class="interior__image" src="images/interior/image5.jpg" alt="фитнесс-зал" width="350" height="300">
             </li>
             <li class="interior__item _anim-items">
-                <img class="interior__image" src="../../images/interior/image6.jpg" alt="тренажерный зал" width="350" height="300">
+                <img class="interior__image" src="images/interior/image6.jpg" alt="тренажерный зал" width="350" height="300">
             </li>
         </ul>
     </div>
