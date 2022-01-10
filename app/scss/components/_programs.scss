@@ -3,23 +3,26 @@
     padding-bottom: 245px;
     background-color: transparent;
     border: transparent;
-    background-image: url('images/program-bg.png');
+    background-image: url('../images/program_bg.png');
     background-repeat: round;
-    background-size: cover;   
+    background-size: cover;
+
     @include r(992) {
         padding-bottom: 80px;
-    }   
+    }
+
     @include r(768) {
         background-color: $black;
         padding-bottom: 60px;
-    }   
-   
+    }
+
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-        margin-bottom: 80px;       
+        margin-bottom: 80px;
         position: relative;
+
         @include r(992) {
             display: flex;
             flex-wrap: wrap;
@@ -32,17 +35,20 @@
             height: 200px;
             top: -150px;
             left: -120px;
-            background-image: url('images/icons/line1.svg');
+            background-image: url('../images/icons/line1.svg');
             background-repeat: no-repeat;
             background-size: cover;
+
             @include r(1230) {
                 left: -170px;
             }
+
             @include r(768) {
                 left: -66%;
                 top: -88px;
                 z-index: -1;
             }
+
             @include r(580) {
                 display: none;
             }
@@ -53,6 +59,8 @@
         max-width: 350px;
         padding: 20px;
         display: none;
+        position: relative;
+
         @include r(768) {
             padding: 0;
         }
@@ -79,13 +87,17 @@
         width: 100%;
         color: $accend;
         background-color: $black;
+        display: block;
+        text-align: center;
         border: 1px solid $accend;
+
         transition: color 0.5s, background-color 0.5s;
 
         &:hover {
             color: $white;
             background-color: $accend;
         }
+       
     }
 
     &__load {
@@ -93,8 +105,43 @@
         margin: 0 auto;
         padding: 22px 62px;
         color: $white;
+
         @include r(375) {
             padding: 22px 25px;
+        }
+    }
+
+    &-registration {
+        background-color: $white;
+        padding: 30px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+
+        .trainers__registration-label {
+            color: $black;
+        }
+
+        &__close {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .trainers__registration-input {
+            color: $black;
+        }
+
+        .trainers__registration-button {
+            &:hover {
+                background-color: $white;
+            }
+        }
+
+        .record-form__icon {
+            position: absolute;
+            top: 15px;
+            right: 20px;
         }
     }
 
