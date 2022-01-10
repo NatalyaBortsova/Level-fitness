@@ -144,13 +144,13 @@
 </header>
   <div class="record-form trainers__registration">
     <div class="record-form__image" style="background-image: url('images/image-record.jpg');">
-        <button class="record-form__button">
+        <button class="record-form__button" type="button">
             <svg class="record-form__icon">
                 <use xlink:href="images/sprite.svg#close"></use>
-            </svg>
+            </svg>        
         </button>
     </div>
-    <form class="trainers__registration-form" action="#" id="form">
+    <form class="trainers__registration-form" action="#" id="registration">
         <label class="trainers__registration-label" for="name">Имя*</label>
         <input class="trainers__registration-input" type="text" name="name" id="name"
             placeholder="Например Алина" required minlength="3" maxlength="30">
@@ -377,13 +377,11 @@
                         + 30 минут растяжка
                     </p>
                 </div>
-                <button class="programs__button button" type="submit">Записаться</button>
-
+                <button class="programs__button button" type="submit">Записаться</button>               
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="images/programs/program2.jpg" alt="Пилатес" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program2.jpg" alt="Пилатес" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Пилатес
                 </h4>
@@ -395,11 +393,12 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
+
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="images/programs/program3.jpg" alt="Зумба" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program3.jpg" alt="Зумба" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Зумба
                 </h4>
@@ -411,11 +410,11 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="images/programs/program4.jpg" alt="Табата" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program4.jpg" alt="Табата" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Табата
                 </h4>
@@ -427,6 +426,7 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
             </li>
 
             <li class="programs__item">
@@ -480,8 +480,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="images/programs/program2.jpg" alt="Пилатес" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program2.jpg" alt="Пилатес" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Пилатес
                 </h4>
@@ -496,8 +495,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="images/programs/program3.jpg" alt="Зумба" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program3.jpg" alt="Зумба" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Зумба
                 </h4>
@@ -512,8 +510,7 @@
             </li>
 
             <li class="programs__item">
-                <img class="programs__image" src="images/programs/program4.jpg" alt="Табата" width="315"
-                    height="185">
+                <img class="programs__image" src="images/programs/program4.jpg" alt="Табата" width="315" height="185">
                 <h4 class="programs__title subtitle">
                     Табата
                 </h4>
@@ -541,6 +538,7 @@
                     </p>
                 </div>
                 <button class="programs__button button" type="submit">Записаться</button>
+
             </li>
 
             <li class="programs__item">
@@ -563,7 +561,7 @@
         <button class="programs__load button" type="submit">Посмотреть все программы</button>
     </div>
 </section>
-    <div class="form-registration" style="background-image: url('images/level_bg.png');">
+    <div class="form-registration" style="background-image: url('../../images/level_bg.png');">
     <h2 class="form-registration__title subtitle _anim-items">
         Приходите на первое бесплатное занятие
     </h2>
@@ -613,7 +611,7 @@
                     <div class="trainers__slide">
                         <img class="trainers__image programs__image" src="images/trainers/trainer1.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Иванов Андрей
                         </h4>
                         <div class="trainers__text programs__text">
@@ -627,7 +625,7 @@
                     <div class="trainers__slide">
                         <img class="trainers__image programs__image" src="images/trainers/trainer2-5.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Варламова Екатерина
                         </h4>
                         <div class="trainers__text programs__text">
@@ -641,7 +639,7 @@
                     <div class="trainers__slide">
                         <img class="trainers__image programs__image" src="images/trainers/trainer3.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Петров Николай
                         </h4>
                         <div class="trainers__text programs__text">
@@ -655,7 +653,7 @@
                     <div class="trainers__slide">
                         <img class="trainers__image programs__image" src="images/trainers/trainer4.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Иванов Андрей
                         </h4>
                         <div class="trainers__text programs__text">
@@ -669,7 +667,7 @@
                     <div class="trainers__slide">
                         <img class="trainers__image programs__image" src="images/trainers/trainer2-5.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Варламова Екатерина
                         </h4>
                         <div class="trainers__text programs__text">
@@ -683,7 +681,7 @@
                     <div class="trainers__slide">
                         <img class="trainers__image programs__image" src="images/trainers/trainer6.jpg"
                             alt="тренер" width="315" height="185">
-                        <h4 class=" trainers__title programs__title subtitle">
+                        <h4 class=" trainers__title programs__title subtitle _anim-items">
                             Петров Николай
                         </h4>
                         <div class="trainers__text programs__text">
